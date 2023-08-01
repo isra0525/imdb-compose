@@ -1,3 +1,5 @@
+import org.gradle.api.initialization.resolve.RepositoriesMode
+
 pluginManagement {
     repositories {
         google()
@@ -9,8 +11,16 @@ dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
+        mavenLocal()
         mavenCentral()
     }
 }
 rootProject.name = "Imdb"
 include ':app'
+include ':core'
+include ':login:login_data'
+include ':login:login_domain'
+include ':login:login_presentation'
+include ':movies:movies_presentation'
+include ':movies:movies_domain'
+include ':movies:movies_data'
