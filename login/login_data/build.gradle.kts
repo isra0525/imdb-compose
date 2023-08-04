@@ -15,4 +15,5 @@ dependencies {
     "implementation"(Room.roomKtx)
     "implementation"(Room.roomRuntime)
     "implementation"(DataStore.dataStorePreferences)
+    "implementation"(Google.firebaseAuth)
 }

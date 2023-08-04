@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "43489407025",
+    "project_id": "imdb-kata",
+    "storage_bucket": "imdb-kata.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:43489407025:android:c1817feabbc9b1b0cae510",
+        "android_client_info": {
+          "package_name": "com.dojo.imdb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "43489407025-l7g9oaq30578r7tcqlu2drs64199s5sc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBanJ0AoeYXIh7CeNLAoDeuLZJu52-Rp6o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "43489407025-l7g9oaq30578r7tcqlu2drs64199s5sc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
