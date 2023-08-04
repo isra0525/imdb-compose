@@ -3,6 +3,7 @@ plugins {
     kotlin("android")
     id("dagger.hilt.android.plugin")
     id("kotlin-kapt")
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -88,6 +89,8 @@ dependencies {
     implementation(Room.roomRuntime)
 
     implementation(DataStore.dataStorePreferences)
+
+    implementation(Google.firebaseAuth)
 
     testImplementation(Testing.junit4)
     testImplementation(Testing.junitAndroidExt)
