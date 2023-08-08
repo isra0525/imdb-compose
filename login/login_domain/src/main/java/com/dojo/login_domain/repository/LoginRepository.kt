@@ -1,15 +1,17 @@
 package com.dojo.login_domain.repository
 
 import com.dojo.login_domain.model.User
+import com.dojo.login_domain.model.UserRegister
+import kotlinx.coroutines.flow.Flow
 
 interface LoginRepository {
 
-    suspend fun login(user: User): Result<Boolean>
+    fun login(user: User): Flow<Boolean>
 
-    suspend fun register(user: User): Result<Boolean>
+    fun register(user: UserRegister): Flow<Boolean>
 
-    suspend fun logout(): Result<Boolean>
+    suspend fun logout()
 
-    suspend fun isLoggedIn(): Result<Boolean>
+    val currentUser: Flow<Boolean>
 
 }

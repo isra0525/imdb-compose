@@ -1,19 +1,16 @@
 package com.dojo.login_data.di
 
-import com.google.firebase.auth.FirebaseAuth
+import com.dojo.login_data.repository.LoginRepositoryImpl
+import com.dojo.login_domain.repository.LoginRepository
+import dagger.Binds
 import dagger.Module
-import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-import javax.inject.Singleton
 
 @Module
 @InstallIn(SingletonComponent::class)
-object LoginDataModule {
+abstract class LoginDataModule {
 
-    @Provides
-    @Singleton
-    fun provideFirebaseAuth(): FirebaseAuth {
-        return FirebaseAuth.getInstance()
-    }
+    @Binds
+    abstract fun provideLoginRepository(impl: LoginRepositoryImpl): LoginRepository
 }

@@ -44,6 +44,7 @@ android {
     packagingOptions {
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
+            excludes += "/META-INF/LICENSE.md"
         }
     }
 
@@ -68,9 +69,13 @@ dependencies {
     kapt(DaggerHilt.hiltCompiler)
 
     implementation(project(Modules.core))
+    implementation(project(Modules.coreUi))
     implementation(project(Modules.loginData))
     implementation(project(Modules.loginDomain))
     implementation(project(Modules.loginPresentation))
+    implementation(project(Modules.moviesData))
+    implementation(project(Modules.moviesDomain))
+    implementation(project(Modules.moviesPresentation))
 
     implementation(AndroidX.coreKtx)
     implementation(AndroidX.appCompat)
