@@ -61,7 +61,10 @@ class MainActivity : ComponentActivity() {
                             )
                         }
                         composable(Route.MOVIES) {
-                            MoviesScreen()
+                            MoviesScreen(
+                                scaffoldState = scaffoldState,
+                                onNavigateUp = { navController.navigateUp() }
+                            )
                         }
                     }
                 }
